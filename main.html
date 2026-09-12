@@ -8,6 +8,34 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-	
+		<button class="btn btn-danger" data-toggle="modal" data-target="#myModal">Sign Up</button>
+		<div id="myModal" class="modal fade">
+			<div class="modal-content">
+				<div class="d-flex modal-header justify-content-between">
+					<span>Create Account</span>
+					<button data-dismiss="modal">close</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div >
+							<label for="email">Email address</label>
+							<input id="email" type="email" required placeholder="Enter email">
+							<p>Your information is safe with us</p>
+						</div>
+
+						<div>
+							<label for="password">Password</label>
+							<input id="password" type="password" required placeholder="Password">
+						</div>
+
+						<div>
+							<label for="c-password">Confirm Password</label>
+							<input id="c-password" type="password" required placeholder="Confirm password">
+						</div>
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
